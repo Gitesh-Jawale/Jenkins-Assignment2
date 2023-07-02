@@ -1,6 +1,8 @@
 pipeline {
     agent any
-    
+    environment {
+       MAVEN_HOME = 'C:\apache-maven-3.9.3' // Replace with the actual Maven home directory path
+    }
     stages {
         stage('Checkout') {
             steps {
@@ -12,7 +14,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Execute the Maven command within a shell
-                sh 'C:\apache-maven-3.9.3\bin\mvn clean package'
+                sh 'mvn clean package'
             }
         }
     }

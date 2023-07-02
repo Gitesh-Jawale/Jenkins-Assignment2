@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-       MAVEN_HOME = 'C:\apache-maven-3.9.3' // Replace with the actual Maven home directory path
+        MAVEN_HOME = 'C:/apache-maven-3.9.3' // Use forward slashes instead of backslashes
     }
     stages {
         stage('Checkout') {

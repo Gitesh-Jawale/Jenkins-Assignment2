@@ -12,7 +12,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Execute the Maven command within a shell
-                sh 'mvn clean package'
+                sh 'clean package'
             }
         }
     }

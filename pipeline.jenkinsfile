@@ -14,7 +14,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Execute the Maven command within a shell
-                sh 'mvn clean package'
+                bat 'mvn clean package'
             }
         }
     }
